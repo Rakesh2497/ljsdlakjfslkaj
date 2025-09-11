@@ -27,7 +27,11 @@ print(df['Make'].value_counts())
 # Filter rows based on a condition (e.g., 'Make' is 'TESLA')
 tesla_cars = df[df['Make'] == 'TESLA']
 print(tesla_cars.count())
+# Save the filtered DataFrame to a new CSV file
+tesla_cars.to_csv("/Users/rakeshnanankal/Downloads/tesla_cars.csv", index=False)
+# Group by a specific column and calculate the mean of another column (e.g., average 'Battery Capacity' by 'Make')
 
+average_battery_capacity = df.groupby('Make')['Battery Capacity'].mean()
 
 
 
