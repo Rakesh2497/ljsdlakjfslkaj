@@ -1,0 +1,8 @@
+SpeechRecognition==3.10.0
+pydub==0.25.1
+pyaudio==0.2.11
+
+# For OPUS file support, you also need FFmpeg installed:
+# macOS: brew install ffmpeg
+# Ubuntu/Debian: sudo apt install ffmpeg  
+# Windows: Download from https://ffmpeg.org/download.html
